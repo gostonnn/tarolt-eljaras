@@ -9,6 +9,7 @@ SET @table_value = "Berki Krisztián";
 call inAndOut( @table_value );
 SELECT @table_value as fizetés;
 
+-----
 
 DELIMITER $$
 CREATE PROCEDURE inAndOut2( INOUT table_data VARCHAR(50) )
@@ -20,4 +21,13 @@ DELIMITER ;
 SET @table_value = 5;
 call inAndOut2( @table_value );
 SELECT @table_value as fizetés;
+
+-----
+
+IF expression THEN
+	statements
+	
+ELSE
+	statements
+END IF
 
